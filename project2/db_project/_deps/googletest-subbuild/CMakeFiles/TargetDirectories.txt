@@ -1,0 +1,3 @@
+/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir
+/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
+/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir

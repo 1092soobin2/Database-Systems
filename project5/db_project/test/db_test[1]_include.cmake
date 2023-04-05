@@ -1,0 +1,5 @@
+if(EXISTS "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/test/db_test[1]_tests.cmake")
+  include("/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/test/db_test[1]_tests.cmake")
+else()
+  add_test(db_test_NOT_BUILT db_test_NOT_BUILT)
+endif()

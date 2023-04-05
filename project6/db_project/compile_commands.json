@@ -1,0 +1,47 @@
+[
+{
+  "directory": "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project",
+  "command": "/usr/bin/c++  -I\"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project\" -I\"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/db/include\" -std=gnu++1z -o CMakeFiles/disk_based_db.dir/main.cc.o -c \"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/main.cc\"",
+  "file": "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/main.cc"
+},
+{
+  "directory": "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/db",
+  "command": "/usr/bin/c++  -I\"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/db/include\" -std=gnu++1z -o CMakeFiles/db.dir/src/bpt.cc.o -c \"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/db/src/bpt.cc\"",
+  "file": "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/db/src/bpt.cc"
+},
+{
+  "directory": "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/db",
+  "command": "/usr/bin/c++  -I\"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/db/include\" -std=gnu++1z -o CMakeFiles/db.dir/src/file.cc.o -c \"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/db/src/file.cc\"",
+  "file": "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/db/src/file.cc"
+},
+{
+  "directory": "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/test",
+  "command": "/usr/bin/c++  -I\"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/db/include\" -isystem \"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googletest/include\" -isystem \"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googletest\" -std=gnu++1z -o CMakeFiles/db_test.dir/file_test.cc.o -c \"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/test/file_test.cc\"",
+  "file": "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/test/file_test.cc"
+},
+{
+  "directory": "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/test",
+  "command": "/usr/bin/c++  -I\"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/db/include\" -isystem \"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googletest/include\" -isystem \"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googletest\" -std=gnu++1z -o CMakeFiles/db_test.dir/basic_test.cc.o -c \"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/test/basic_test.cc\"",
+  "file": "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/test/basic_test.cc"
+},
+{
+  "directory": "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-build/googlemock",
+  "command": "/usr/bin/c++  -I\"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googlemock/include\" -I\"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googlemock\" -isystem \"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googletest/include\" -isystem \"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googletest\" -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++1z -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c \"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googlemock/src/gmock-all.cc\"",
+  "file": "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-build/googlemock",
+  "command": "/usr/bin/c++  -isystem \"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googlemock/include\" -isystem \"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googlemock\" -isystem \"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googletest/include\" -isystem \"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googletest\" -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++1z -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c \"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googlemock/src/gmock_main.cc\"",
+  "file": "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googlemock/src/gmock_main.cc"
+},
+{
+  "directory": "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-build/googletest",
+  "command": "/usr/bin/c++  -I\"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googletest/include\" -I\"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googletest\" -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++1z -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c \"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googletest/src/gtest-all.cc\"",
+  "file": "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-build/googletest",
+  "command": "/usr/bin/c++  -isystem \"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googletest/include\" -isystem \"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googletest\" -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++1z -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c \"/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googletest/src/gtest_main.cc\"",
+  "file": "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-src/googletest/src/gtest_main.cc"
+}
+]

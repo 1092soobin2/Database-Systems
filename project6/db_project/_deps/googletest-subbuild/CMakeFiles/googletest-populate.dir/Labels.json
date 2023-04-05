@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-subbuild/CMakeFiles/googletest-populate"
+		},
+		{
+			"file" : "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-subbuild/CMakeFiles/googletest-populate.rule"
+		},
+		{
+			"file" : "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete.rule"
+		},
+		{
+			"file" : "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build.rule"
+		},
+		{
+			"file" : "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure.rule"
+		},
+		{
+			"file" : "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download.rule"
+		},
+		{
+			"file" : "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install.rule"
+		},
+		{
+			"file" : "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir.rule"
+		},
+		{
+			"file" : "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch.rule"
+		},
+		{
+			"file" : "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test.rule"
+		},
+		{
+			"file" : "/media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"googletest-populate"
+		],
+		"name" : "googletest-populate"
+	}
+}

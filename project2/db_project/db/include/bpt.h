@@ -1,0 +1,111 @@
+#ifndef __BPT_H__
+#define __BPT_H__
+
+// Uncomment the line below if you are compiling on Windows.
+// #define WINDOWS
+#include "page.h"
+#include <string>
+
+#ifdef WINDOWS
+#define bool char
+#define false 0
+#define true 1
+#endif
+
+// ----------------------------------------------------------------
+// ----------------------------------------------------------------
+// API to be exported to its upper layer.
+// ----------------------------------------------------------------
+// ----------------------------------------------------------------
+#define OP_SUCCESS 0
+#define OP_FAILURE -1
+
+// Open existing data file using pathname or create a new one if not existed.
+// If success, return unique table id, which represents the own table in this database.
+// If failure, return negative value.
+int64_t open_table(char *pathname);
+
+// ----------------------------------------------------------------
+// Search
+// ----------------------------------------------------------------
+
+// Return the leaf page numnber which may contain the key.
+// If tree does not exist, return 0.
+pagenum_t find_leaf_pagenum(table_id_t table_id, pagenum_t root_pagenum, page::key_t key);
+
+// Find key and store matched value and size in ret_val and val_size if key exists.
+// If success, return 0. Otherwise, return non-zero value.
+// The caller must allocate ret_val and val_size.
+int db_find(int64_t table_id, int64_t key, char *ret_val, uint16_t *val_size);
+
+// ----------------------------------------------------------------
+// Insertion
+// ----------------------------------------------------------------
+
+slot_t make_slot(page::key_t key, uint16_t size);
+// Make a new leaf page or internal page.
+pagenum_t make_node_page(int is_leaf);
+
+// Insert the new slot and value into the leaf page.
+int insert_into_leaf_page(table_id_t table_id, pagenum_t leaf_pagenum, slot_t slot, char* value);
+int insert_into_leaf_page_after_splitting(table_id_t table_id, pagenum_t leaf_pagenum, slot_t slot, char* value);
+
+// Insert the new branch into the internal page.
+int insert_into_internal_page(table_id_t table_id, pagenum_t internal_pagenum, page::key_t new_right_key, pagenum_t new_branch_pagenum);
+int insert_into_internal_page_after_splitting(table_id_t table_id, pagenum_t internal_pagenum, page::key_t new_right_key, pagenum_t new_branch_pagenum);
+
+// Insert the new branch into the parent page.
+int insert_into_parent_page(table_id_t table_id, pagenum_t branch_pagenum, page::key_t new_right_key, pagenum_t new_branch_pagenum);
+
+// Insert into internal root page.
+int insert_into_new_root_page(table_id_t table_id, pagenum_t branch_pagenum, page::key_t new_right_key, pagenum_t new_branch_pagenum);
+// Insert into leaf root page.
+int start_new_page_tree(table_id_t table_id, slot_t slot, char* value);
+
+// Insert key and value to data file at the right place.
+// If success, return 0. Otherwise, return non-zero value.
+int db_insert(int64_t table_id, int64_t key, char* value, uint16_t val_size);
+
+// ----------------------------------------------------------------
+// Deletion
+// ----------------------------------------------------------------
+// Remove the slot containing the key and pointed value in the leaf page.
+int remove_entry_from_leaf_page(table_id_t table_id, pagenum_t leaf_pagenum, page::key_t key);
+// Remove the branch containing the key in the internal page. (coresspoding pagenum is alwarys in the branch containing the key. See coalescense function.)
+int remove_entry_from_internal_page(table_id_t table_id, pagenum_t internal_pagenum, page::key_t key);
+
+int adjust_root_page(table_id_t table_id, pagenum_t root_pagenum);
+
+// Coalesce a too small page with a neighbor page
+// which can accept the additional entries
+// without exceeding the maximum.
+int coalesce_leaf_pages(table_id_t table_id, pagenum_t leaf_pagenum, pagenum_t neighbor_pagenum, page::key_t key_between_two);
+int coalesce_internal_pages(table_id_t table_id, pagenum_t internal_pagenum, pagenum_t neighbor_pagenum, page::key_t key_between_two);
+
+// Redistribute between a too small page and a neighbor page
+// which is too big to append the small page
+// without exceeding the maximum.
+// Move some entries from the neighbor page to the leaf page.
+int redistribute_leaf_pages(table_id_t table_id, pagenum_t leaf_pagenum, pagenum_t neighbor_pagenum, int branch_index_between_two);
+// Move a entry from the nieghbor page to the internal page.
+int redistribute_internal_pages(table_id_t table_id, pagenum_t internal_pagenum, pagenum_t neighbor_pageum, int branch_index_between_two);
+
+// Delete the key in the page.
+int delete_entry_in_page(table_id_t table_id, pagenum_t pagenum, int is_leaf, page::key_t key);
+
+// Find key and delete it if found.
+// If success, return 0. Otherwise, return non-zero value.
+int db_delete(int64_t table_id, int64_t key);
+
+int init_db(void);
+int shutdown_db(void);
+
+inline void wrapper_file_read_page(table_id_t table_id, pagenum_t pagenum, header_page_t*& dst);
+inline void wrapper_file_read_page(table_id_t table_id, pagenum_t pagenum, node_page_t*& dst);
+inline void wrapper_file_write_page(table_id_t table_id, pagenum_t pagenum, header_page_t*& src);
+inline void wrapper_file_write_page(table_id_t table_id, pagenum_t pagenum, node_page_t*& src);
+
+void print_page(table_id_t table_id, pagenum_t pagenum);
+int64_t get_root_pagenum(int64_t table_id);
+
+#endif /* __BPT_H__*/

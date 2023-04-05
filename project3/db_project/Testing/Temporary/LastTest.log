@@ -1,0 +1,19 @@
+Start testing: Oct 01 19:42 KST
+----------------------------------------------------------
+Unable to find executable: db_test_NOT_BUILT
+1/1 Testing: db_test_NOT_BUILT
+1/1 Test: db_test_NOT_BUILT
+Command: ""
+Directory: /media/psf/Home/Desktop/2021-2/Database_Systems(2)/Project/Project2_DiskSpaceManager/db_project/test
+"db_test_NOT_BUILT" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"db_test_NOT_BUILT" end time: Oct 01 19:42 KST
+"db_test_NOT_BUILT" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 01 19:42 KST
